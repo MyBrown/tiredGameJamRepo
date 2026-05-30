@@ -2,7 +2,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 public class CupManager : MonoBehaviour
 {
-    public int ingredientNum;
+    public int ingredientNum = 0;
     public SpriteRenderer noIngredient;
     public SpriteRenderer firstIngredient;
     public SpriteRenderer secondIngredient;
@@ -10,8 +10,6 @@ public class CupManager : MonoBehaviour
 
     void Start()
     {
-        //ensures we start with no ingredients
-        ingredientNum = 0;
         // makes sure that only the empty cup sprite is active at the start
         noIngredient.enabled = true;
         firstIngredient.enabled = false;
@@ -46,4 +44,5 @@ public class CupManager : MonoBehaviour
             thirdIngredient.enabled = true;
         }
     }
+
 }
