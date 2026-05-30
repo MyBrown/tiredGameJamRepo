@@ -1,0 +1,49 @@
+using Unity.VisualScripting;
+using UnityEngine;
+public class CupManager : MonoBehaviour
+{
+    public int ingredientNum;
+    public SpriteRenderer noIngredient;
+    public SpriteRenderer firstIngredient;
+    public SpriteRenderer secondIngredient;
+    public SpriteRenderer thirdIngredient;
+
+    void Start()
+    {
+        //ensures we start with no ingredients
+        ingredientNum = 0;
+        // makes sure that only the empty cup sprite is active at the start
+        noIngredient.enabled = true;
+        firstIngredient.enabled = false;
+        secondIngredient.enabled = false;
+        thirdIngredient.enabled = false;
+
+
+    }
+
+    void Update()
+    {
+        // turns off all other sprites to prevent them from overlapping when the next one is called
+        if (ingredientNum == 1)
+        {
+            noIngredient.enabled = false;
+            firstIngredient.enabled = true;
+            secondIngredient.enabled = false;
+            thirdIngredient.enabled = false;
+        }
+        else if (ingredientNum == 2)
+        {
+            noIngredient.enabled = false;
+            firstIngredient.enabled = false;
+            secondIngredient.enabled = true;
+            thirdIngredient.enabled = false;
+        }
+        else if (ingredientNum == 3)
+        {
+            noIngredient.enabled = false;
+            firstIngredient.enabled = false;
+            secondIngredient.enabled = false;
+            thirdIngredient.enabled = true;
+        }
+    }
+}
