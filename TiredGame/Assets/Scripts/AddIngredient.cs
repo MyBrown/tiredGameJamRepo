@@ -7,7 +7,7 @@ public class AddIngredient : MonoBehaviour
 
     public void OnClick()
     {
-        while (cupManager.GetComponent<CupManager>().ingredientNum < 4)
+        if (cupManager.GetComponent<CupManager>().ingredientNum < 4)
         {
             cupManager.GetComponent<CupManager>().ingredientNum++;
         }
