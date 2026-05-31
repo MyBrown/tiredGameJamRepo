@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class RecipeManager : MonoBehaviour
 {
@@ -11,15 +12,22 @@ public class RecipeManager : MonoBehaviour
     public GameObject liquidGO;
     private string liquid;
     private string topping;
-    private Text liquidUI;
-    private Text toppingUI;
+    public static Text liquidUI;
+    public static Text toppingUI;
     private int lineSwitch = 0;
-    private float recipeTimer = 3.0f;
+    public static float recipeTimer = 3.0f;
+    private Animator anim;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        toppingUI = toppingGO.GetComponent<Text>();
-        liquidUI = liquidGO.GetComponent<Text>();
+        if (recipeTimer == 3.0f)
+        { 
+                
+            toppingUI = toppingGO.GetComponent<Text>();
+            liquidUI = liquidGO.GetComponent<Text>();
+            anim = GetComponent<Animator>();
+        }
+        
     }
 
     // Update is called once per frame
@@ -36,7 +44,7 @@ public class RecipeManager : MonoBehaviour
             {
                 case 0:
                     lineSwitch = 1;
-                    recipeTimer = 3.0f;
+                    recipeTimer = 1.0f;
                     liquidUI.text = "Base: " + liquids[Random.Range(0, 1)];
                     
                     
@@ -44,9 +52,25 @@ public class RecipeManager : MonoBehaviour
                 case 1:
                     lineSwitch = 2;
                     recipeTimer = 3.0f;
-                    toppingUI.text = "Topping: " + toppings[Random.Range(0, 2)];
+                    toppingUI.text = "Toppings: " + toppings[Random.Range(0, 2)];
                     break;
+                case 2:
+                    recipeTimer = 3.0f;
+                    lineSwitch = 3;
+                    anim.Play("SendToIngredients");
+                    break;
+                case 3:
+                    SceneManager.LoadScene("IngredientsStation");
+                    lineSwitch = 4;
+                    break;
+                case 4:
+                    //SceneManager.MoveGameObjectToScene(this.gameObject, SceneManager.GetSceneByName("IngredientsStation"));
+                    
+                    break;
+
+
             }
+
 
         }
     }

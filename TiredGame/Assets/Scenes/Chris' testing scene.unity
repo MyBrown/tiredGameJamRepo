@@ -512,19 +512,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31ab07e18c87ee34780eb74f345874a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RecipeManager
-  toppings:
-  - Sugar
-  - Cinnamon
-  liquids:
-  - Tea
-  - Coffee
-  - Water
   toppingGO: {fileID: 1069332950}
   liquidGO: {fileID: 738072325}
-  liquid: 
-  topping: 
-  lineSwitch: 0
-  recipeTimer: 3
 --- !u!224 &1937564995
 RectTransform:
   m_ObjectHideFlags: 0
