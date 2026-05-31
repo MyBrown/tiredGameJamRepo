@@ -11,6 +11,5 @@ public class AddIngredient : MonoBehaviour
         {
             cupManager.GetComponent<CupManager>().ingredientNum++;
         }
-        Debug.Log("No more ingredients can be added");
     }
 }
