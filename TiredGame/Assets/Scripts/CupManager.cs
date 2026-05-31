@@ -1,5 +1,6 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 public class CupManager : MonoBehaviour
 {
     public int ingredientNum = 0;
@@ -7,6 +8,8 @@ public class CupManager : MonoBehaviour
     public SpriteRenderer firstIngredient;
     public SpriteRenderer secondIngredient;
     public SpriteRenderer thirdIngredient;
+
+    public GameObject orderUp;
 
     void Start()
     {
@@ -16,6 +19,7 @@ public class CupManager : MonoBehaviour
         secondIngredient.enabled = false;
         thirdIngredient.enabled = false;
 
+        orderUp.SetActive(false);
 
     }
 
@@ -42,6 +46,8 @@ public class CupManager : MonoBehaviour
             firstIngredient.enabled = false;
             secondIngredient.enabled = false;
             thirdIngredient.enabled = true;
+
+            orderUp.SetActive(true);
         }
     }
 
