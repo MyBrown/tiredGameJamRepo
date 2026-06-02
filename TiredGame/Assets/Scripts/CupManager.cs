@@ -1,6 +1,4 @@
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UI;
 public class CupManager : MonoBehaviour
 {
     public int ingredientNum = 0;
