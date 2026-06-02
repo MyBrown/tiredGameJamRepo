@@ -12,7 +12,6 @@ public class SilohuetteController : MonoBehaviour
         StartCoroutine(SwitchImages());
     }
 
-    // Update is called once per frame
     IEnumerator SwitchImages()
     {
         yield return new WaitForSeconds(2f);
