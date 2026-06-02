@@ -4,8 +4,8 @@ using UnityEngine.SceneManagement;
 
 public class RecipeManager : MonoBehaviour
 {
-    private string[] toppings = {"Sugar","Cinnamon"};
-    private string[] liquids = { "Tea","Coffee","Water"};
+    private string[] toppings = {"sugar","cinnamon","milk"};
+    private string[] liquids = { "tea","coffee","milk"};
     public GameObject toppingGO;
     public GameObject liquidGO;
     public GameObject receiptGO;
@@ -16,6 +16,7 @@ public class RecipeManager : MonoBehaviour
     private int lineSwitch = 0;
     private bool play = false;
     public static float recipeTimer = 3.0f;
+    private float recipeStart;
     private Animator anim;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -73,11 +74,18 @@ public class RecipeManager : MonoBehaviour
 
 
         }
+        if(recipeStart > 0)
+        {
+            recipeStart -= 1.0f * Time.deltaTime;
+        }
 
         if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("IngredientsStation") && play == false)
         {
-            play = true;
-            anim.Play("IngredientState");
+            if (recipeStart <= 0)
+            {
+                play = true;
+                anim.Play("IngredientState");
+            }
         }
     }
 }

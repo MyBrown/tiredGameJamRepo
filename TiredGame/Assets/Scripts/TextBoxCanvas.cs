@@ -2,13 +2,14 @@ using UnityEngine;
 
 public class TextBoxCanvas : MonoBehaviour
 {
-    private float timer = 1f;
+    private float timer = 0f;
     public GameObject textBoxGO;
     public GameObject textBoxTextGO;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-       
+       textBoxGO.SetActive(true);
+        timer = 1f;
     }
 
     // Update is called once per frame
@@ -16,13 +17,10 @@ public class TextBoxCanvas : MonoBehaviour
     {
         if (timer > 0f)
         {
-            timer -= 0.1f * Time.deltaTime*10;
+            timer -= 1f * Time.deltaTime;
         }
-        if(timer < 0.8f)
-        {
-            textBoxGO.SetActive(true);
-        }
-        if(timer <= 0f)
+       
+        if(timer < 0f)
         {
             
             textBoxTextGO.SetActive(true);

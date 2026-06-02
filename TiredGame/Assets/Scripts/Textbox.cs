@@ -9,8 +9,8 @@ public class Textbox : MonoBehaviour
     public string textToWrite;
     private Text text;
     public int page = 0;
-    public float timer = 20f;
-    public int charInt;
+    public float timer = 30f;
+    public int charInt = -1;
     public GameObject textBoxGO;
     public GameObject customerGO;
     private Animator anim;
