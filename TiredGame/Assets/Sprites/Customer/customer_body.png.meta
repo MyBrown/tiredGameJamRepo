@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: bad63822ad24d65428cdd211f3b6ccef
+guid: 9a96158dea5f01d4c93dd3a321829db0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1346043039424895713
-    second: RecipeDesk_0
+      213: 4406983332565127366
+    second: customer_body_0
+  - first:
+      213: -4093560055754921056
+    second: customer_body_1
+  - first:
+      213: -2560623805393036740
+    second: customer_body_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: RecipeDesk_0
+      name: customer_body_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 2048
-        height: 1152
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +134,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f1521bebcf4e15de0800000000000000
-      internalID: -1346043039424895713
+      spriteID: 6c09c94edffb82d30800000000000000
+      internalID: 4406983332565127366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: customer_body_1
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0abeff161d0c037c0800000000000000
+      internalID: -4093560055754921056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: customer_body_2
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 0
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3a932c3736d67cd0800000000000000
+      internalID: -2560623805393036740
       vertices: []
       indices: 
       edges: []
@@ -138,7 +188,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: b73d20702f53a654b8a894be853a518e
+    spriteID: a334556b39df82b4ca5c665aa390d1cd
     internalID: 0
     vertices: []
     indices: 
@@ -146,9 +196,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":1024.0,"y":1024.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      RecipeDesk_0: -1346043039424895713
+      customer_body_0: 4406983332565127366
+      customer_body_1: -4093560055754921056
+      customer_body_2: -2560623805393036740
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
