@@ -7,14 +7,16 @@ using UnityEngine.SceneManagement;
 public class RecipeManager : MonoBehaviour
 {
     private string[] toppings = {"Sugar","Cinnamon"};
-    private string[] liquids = { "Tea","Coffee","Water" };
+    private string[] liquids = { "Tea","Coffee","Water"};
     public GameObject toppingGO;
     public GameObject liquidGO;
+    public GameObject receiptGO;
     private string liquid;
     private string topping;
     public static Text liquidUI;
     public static Text toppingUI;
     private int lineSwitch = 0;
+    private bool play = false;
     public static float recipeTimer = 3.0f;
     private Animator anim;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -25,7 +27,7 @@ public class RecipeManager : MonoBehaviour
                 
             toppingUI = toppingGO.GetComponent<Text>();
             liquidUI = liquidGO.GetComponent<Text>();
-            anim = GetComponent<Animator>();
+            anim = receiptGO.GetComponent<Animator>();
         }
         
     }
@@ -45,26 +47,26 @@ public class RecipeManager : MonoBehaviour
                 case 0:
                     lineSwitch = 1;
                     recipeTimer = 1.0f;
-                    liquidUI.text = "Base: " + liquids[Random.Range(0, 1)];
+                    liquidUI.text = "Base: " + liquids[Random.Range(0, 2)];
                     
                     
                     break;
                 case 1:
                     lineSwitch = 2;
                     recipeTimer = 3.0f;
-                    toppingUI.text = "Toppings: " + toppings[Random.Range(0, 2)];
+                    toppingUI.text = "Toppings: " + toppings[Random.Range(0, 1)];
                     break;
                 case 2:
-                    recipeTimer = 3.0f;
+                    recipeTimer = 1.0f;
                     lineSwitch = 3;
                     anim.Play("SendToIngredients");
                     break;
                 case 3:
+                    DontDestroyOnLoad(this.gameObject);
                     SceneManager.LoadScene("IngredientsStation");
                     lineSwitch = 4;
                     break;
                 case 4:
-                    //SceneManager.MoveGameObjectToScene(this.gameObject, SceneManager.GetSceneByName("IngredientsStation"));
                     
                     break;
 
@@ -72,6 +74,12 @@ public class RecipeManager : MonoBehaviour
             }
 
 
+        }
+
+        if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("IngredientsStation") && play == false)
+        {
+            play = true;
+            anim.Play("IngredientState");
         }
     }
 }

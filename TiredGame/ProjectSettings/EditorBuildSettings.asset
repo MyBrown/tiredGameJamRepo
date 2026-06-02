@@ -8,6 +8,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 12328a39b5d8f21498af1d6b470aaeca
+  - enabled: 1
+    path: Assets/Scenes/Chris' testing scene.unity
+    guid: 46134496550d76e4487e86f6b7652da0
+  - enabled: 1
+    path: Assets/Scenes/IngredientsStation.unity
+    guid: 6e43c035b2482c4459798e201d0aad87
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: f49b57a365b5ed74796d8b982a467584
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
