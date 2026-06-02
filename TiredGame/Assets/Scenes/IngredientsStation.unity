@@ -364,6 +364,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 59059932088fc7d4ba8fcbc6a376e3df, type: 3}
+--- !u!1 &441584391 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5923434088203288561, guid: 8466aa5717106f247a3b42507cbff880, type: 3}
+  m_PrefabInstance: {fileID: 1168419283}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &478745076
 GameObject:
   m_ObjectHideFlags: 0
@@ -770,6 +775,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cup
       objectReference: {fileID: 0}
+    - target: {fileID: 2809325592271330759, guid: 8466aa5717106f247a3b42507cbff880, type: 3}
+      propertyPath: orderUp
+      value: 
+      objectReference: {fileID: 441584391}
     - target: {fileID: 3666209925400829816, guid: 8466aa5717106f247a3b42507cbff880, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.65301734
