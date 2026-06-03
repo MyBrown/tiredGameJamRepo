@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5986865314980775859}
   - component: {fileID: 1571212104032724079}
   m_Layer: 5
-  m_Name: cinnamon button 1
+  m_Name: button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -251,7 +251,7 @@ GameObject:
   - component: {fileID: 2081072893641443545}
   - component: {fileID: 3298425952665340548}
   m_Layer: 5
-  m_Name: cinnamon silohuette
+  m_Name: silohuette
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

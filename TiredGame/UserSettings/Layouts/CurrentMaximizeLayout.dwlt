@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 112}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 17351
+  controlID: 49
   draggingID: 0
 --- !u!114 &2
 MonoBehaviour:
@@ -153,7 +153,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 112}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 17352
+  controlID: 50
   draggingID: 0
 --- !u!114 &4
 MonoBehaviour:
@@ -180,7 +180,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 56}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 17353
+  controlID: 51
   draggingID: 0
 --- !u!114 &5
 MonoBehaviour:
@@ -250,24 +250,15 @@ MonoBehaviour:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs:
-      - m_Data: -7138
+      - m_Data: -25964
       m_LastClickedID:
-        m_Data: -7138
+        m_Data: -25964
       m_ExpandedIDs:
-      - m_Data: -18882
-      - m_Data: -12882
-      - m_Data: -11008
-      - m_Data: -9854
-      - m_Data: -9482
-      - m_Data: -7138
-      - m_Data: -6722
-      - m_Data: -4992
-      - m_Data: -3988
-      - m_Data: -1316
-      - m_Data: 50608
-      - m_Data: 50620
-      - m_Data: 50632
-      - m_Data: 50648
+      - m_Data: -34266
+      - m_Data: -32270
+      - m_Data: -1440
+      - m_Data: 49222
+      - m_Data: 49238
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -285,7 +276,7 @@ MonoBehaviour:
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_TrimLeadingAndTrailingWhitespace: 0
-        m_ClientGUIView: {fileID: 5}
+        m_ClientGUIView: {fileID: 13}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -830,9 +821,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 0, y: 0, z: -10}
+    m_Target: {x: 117.53816, y: 133.85098, z: -2.1263587}
     speed: 2
-    m_Value: {x: 0, y: 0, z: -10}
+    m_Value: {x: 115.17976, y: 136.56587, z: -2.2791069}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -882,9 +873,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 12.124355
+    m_Target: 324.16345
     speed: 2
-    m_Value: 12.124355
+    m_Value: 339.43817
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -937,8 +928,8 @@ MonoBehaviour:
     y: 0
     width: 328
     height: 424
-  m_MinSize: {x: 202, y: 226}
-  m_MaxSize: {x: 4002, y: 4026}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 2}
   m_Panes:
   - {fileID: 2}
@@ -1020,7 +1011,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/Sprites
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1030,21 +1021,21 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 74
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Sprites
   m_LastFoldersGridSize: 74
   m_LastProjectPath: D:\Game Dev\tiredGameJamRepo\TiredGame
   m_LockTracker:
     m_IsLocked: 0
   m_LastLocalAssetsSearchArea: 1
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 98.166626}
+    scrollPos: {x: 0, y: 79}
     m_SelectedIDs:
-    - m_Data: 49352
+    - m_Data: 49790
     m_LastClickedID:
-      m_Data: 49352
+      m_Data: 49790
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 49050
+    - m_Data: 49474
     - m_Data: 1000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1078,8 +1069,7 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 49050
-    - m_Data: 1000000000
+    - m_Data: 49474
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1107,9 +1097,9 @@ MonoBehaviour:
       m_ResourceFile: 
   m_ListAreaState:
     m_SelectedInstanceIDs:
-    - m_Data: -7138
-    m_LastClickedInstanceID: -7138
-    m_HadKeyboardFocusLastEvent: 0
+    - m_Data: -25964
+    m_LastClickedInstanceID: -25964
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs:
     - m_Data: 48924
     - m_Data: 75628
@@ -1138,6 +1128,7 @@ MonoBehaviour:
     - m_Data: 49254
     - m_Data: 49258
     - m_Data: 49278
+    - m_Data: 54492
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
