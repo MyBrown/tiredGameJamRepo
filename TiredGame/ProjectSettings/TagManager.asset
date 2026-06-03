@@ -8,6 +8,11 @@ TagManager:
   - tea
   - cinnamon
   - sugar
+  - mocha
+  - oatmilk
+  - almondmilk
+  - milk
+  - sprinkles
   layers:
   - Default
   - TransparentFX
