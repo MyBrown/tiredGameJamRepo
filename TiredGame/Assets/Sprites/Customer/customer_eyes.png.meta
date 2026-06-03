@@ -1,10 +1,25 @@
 fileFormatVersion: 2
-guid: bad63822ad24d65428cdd211f3b6ccef
+guid: b2ca72d820a8cb1498f3a05be1e5588d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1346043039424895713
-    second: RecipeDesk_0
+      213: -7743928270883482628
+    second: customer_eyes_0
+  - first:
+      213: 4561220532163467522
+    second: customer_eyes_1
+  - first:
+      213: 4405506075120040248
+    second: customer_eyes_2
+  - first:
+      213: -4879460166902724754
+    second: customer_eyes_3
+  - first:
+      213: -7152446780833738651
+    second: customer_eyes_4
+  - first:
+      213: 604611409701201971
+    second: customer_eyes_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +128,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: RecipeDesk_0
+      name: customer_eyes_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 2048
-        height: 1152
+        width: 1024
+        height: 1024
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +143,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f1521bebcf4e15de0800000000000000
-      internalID: -1346043039424895713
+      spriteID: cf392e7444a088490800000000000000
+      internalID: -7743928270883482628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: customer_eyes_1
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20952d958e5bc4f30800000000000000
+      internalID: 4561220532163467522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: customer_eyes_2
+      rect:
+        serializedVersion: 2
+        x: 2048
+        y: 0
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 839fa571f60832d30800000000000000
+      internalID: 4405506075120040248
       vertices: []
       indices: 
       edges: []
@@ -138,7 +197,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: b73d20702f53a654b8a894be853a518e
+    spriteID: ee8c66168b1a590438af2626163c6405
     internalID: 0
     vertices: []
     indices: 
@@ -146,9 +205,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":1024.0,"y":1024.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      RecipeDesk_0: -1346043039424895713
+      customer_eyes_0: -7743928270883482628
+      customer_eyes_1: 4561220532163467522
+      customer_eyes_2: 4405506075120040248
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
