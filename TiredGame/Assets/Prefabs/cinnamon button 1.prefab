@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7325486147116006724}
   - component: {fileID: 2560101780981875964}
   - component: {fileID: 5986865314980775859}
+  - component: {fileID: 1571212104032724079}
   m_Layer: 5
   m_Name: cinnamon button 1
   m_TagString: Untagged
@@ -148,6 +149,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ButtonDelay
   button: {fileID: 2560101780981875964}
+--- !u!114 &1571212104032724079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958376472642422478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94bb7fb50f403994bb98167a35625695, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AddIngredient
+  cupManager: {fileID: 0}
+  orderArray: {fileID: 0}
 --- !u!1 &6372566829106821841
 GameObject:
   m_ObjectHideFlags: 0
