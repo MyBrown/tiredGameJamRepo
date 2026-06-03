@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class AddIngredient : MonoBehaviour
 {
@@ -12,7 +13,8 @@ public class AddIngredient : MonoBehaviour
         {
             cupManager.GetComponent<CupManager>().ingredientNum++;
             
-            orderArray.GetComponent<CurrentOrder>().AddIngredient(gameObject.tag);
+            orderArray.GetComponent<CurrentOrder>().AddIngredient(EventSystem.current.currentSelectedGameObject.name);
+            Debug.Log($"{EventSystem.current.currentSelectedGameObject.name}");
         }
     }
 }
