@@ -13,8 +13,8 @@ public class AddIngredient : MonoBehaviour
         {
             cupManager.GetComponent<CupManager>().ingredientNum++;
             
-            orderArray.GetComponent<CurrentOrder>().AddIngredient(EventSystem.current.currentSelectedGameObject.name);
-            Debug.Log($"{EventSystem.current.currentSelectedGameObject.name}");
+            orderArray.GetComponent<CurrentOrder>().AddIngredient(this.gameObject.tag);
+            Debug.Log($"{this.gameObject.tag}");
         }
     }
 }
