@@ -2095,7 +2095,7 @@ GameObject:
   - component: {fileID: 1197935762}
   - component: {fileID: 1197935764}
   m_Layer: 5
-  m_Name: Image
+  m_Name: BlinkImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2595,6 +2595,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6929bd38a7b68224f9035c5cecb98484, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CurrentOrder
+  finished: 0
+  ingredientInt: 0
   cupManager: {fileID: 1488649107}
 --- !u!4 &1461343225
 Transform:
