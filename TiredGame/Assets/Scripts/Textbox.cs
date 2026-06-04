@@ -11,6 +11,11 @@ public class Textbox : MonoBehaviour
     public int page = 0;
     public float timer = 30f;
     public int charInt = -1;
+    private AudioSource radioSource;
+    public AudioClip radioOne;
+    public AudioClip radioTwo;
+    public AudioClip radioThree;
+    public AudioClip[] radios;
     public GameObject textBoxGO;
     public GameObject customerGO;
     private Animator anim;
@@ -21,6 +26,8 @@ public class Textbox : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        radioSource = GetComponent<AudioSource>();
+        
         text = GetComponent<Text>();
        anim = textBoxGO.GetComponent<Animator>();
         camAnim = camGO.GetComponent<Animator>();
@@ -34,8 +41,8 @@ public class Textbox : MonoBehaviour
         {
             case 0:
                 //charInt = 0;
-             
-              
+
+                
                 textToWrite = "Howdy, folks! Welcome to another listen sesh on Cappu radio. I'm your host, Lisa Mocha, and before we get into those morning tunes for you early birds, I'm gonna read off some announcements for the month of June!";
                 break;
             case 1:
@@ -46,12 +53,12 @@ public class Textbox : MonoBehaviour
             case 2:
                 //charInt = 0;
                
-                textToWrite = "In other news, new movies are popping up like crazy this summer. I think there's a new slasher film coming out. A little early in my opinion, but it's whatever.\r\n";
+                textToWrite = "In other news, new movies are popping up like crazy this summer. I think there's a new slasher film coming out. Until Dusk, or something like that. A little early in my opinion, but it's whatever.\r\n";
                 break;
             case 3:
                 //charInt = 0;
                 
-                textToWrite = "Anyhoo, I'm Lisa Mocha, and now we shall tune into 86.5 radio!";
+                textToWrite = "Anyhoo, I'm Lisa Mocha, and now we shall tune into 06.3 radio!";
                 break;
             case 4:
                 //charInt = 0;
@@ -64,7 +71,7 @@ public class Textbox : MonoBehaviour
         }
         if (timer > 0)
         {
-            timer -= (1f * (Time.deltaTime*20));
+            timer -= (1f * (Time.deltaTime*40));
         }
         if(timer <= 0)
         {
@@ -80,6 +87,10 @@ public class Textbox : MonoBehaviour
         {
             charInt = 0;
             textbox = "";
+            if(textbox == "")
+            {
+                AudioSource.PlayClipAtPoint(radios[Random.Range(0, 2)], this.transform.position);
+            }
             text.text = textbox;
             page += 1;
             

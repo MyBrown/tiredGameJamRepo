@@ -1,2 +1,14 @@
 fileFormatVersion: 2
 guid: 6929bd38a7b68224f9035c5cecb98484
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - cupManager: {instanceID: 0}
+  - victoryUI: {fileID: 5231837056774799653, guid: 43511cd52e3709043ade0f47f815acb0, type: 3}
+  - failUI: {fileID: 532395743393533340, guid: 3a1906626cd5ba04bab876e3669324f7, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

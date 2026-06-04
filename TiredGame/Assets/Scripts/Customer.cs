@@ -17,7 +17,7 @@ public class Customer : MonoBehaviour
     {
         if(SceneManager.GetActiveScene().name == "OrderUp")
         {
-            if (NextCustomer.destroyGO > 3)
+            if (NextCustomer.destroyGO > 5)
             {
                 //this.gameObject.SetActive(false);
                 Destroy(this.gameObject);
