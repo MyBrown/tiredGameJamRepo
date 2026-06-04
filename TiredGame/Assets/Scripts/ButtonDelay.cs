@@ -5,16 +5,17 @@ using UnityEngine.UI;
 public class ButtonDelay : MonoBehaviour
 {
     public Button button;
-    private AnimationController animCount;
+    public AnimationController animCount;
     void Start()
     {
         button.interactable = false;
+
         if (animCount.GetComponent<AnimationController>().playOnce < 1){
-            Delay(5f);
+            StartCoroutine(Delay(2f));
         }
         else
         {
-            Delay(3f);
+            StartCoroutine(Delay(3.5f));
         }
     }
 

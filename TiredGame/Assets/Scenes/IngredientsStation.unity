@@ -127,6 +127,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 641414698}
     m_Modifications:
+    - target: {fileID: 585819136908392092, guid: 2035bcbcdf1975148808ccbe399944e7, type: 3}
+      propertyPath: animCount
+      value: 
+      objectReference: {fileID: 1445927885}
     - target: {fileID: 2069916476007934743, guid: 2035bcbcdf1975148808ccbe399944e7, type: 3}
       propertyPath: m_SizeDelta.x
       value: 409.6
@@ -175,6 +179,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 0d19cdab799f11b4eaefab9417febca8, type: 3}
+    - target: {fileID: 6523454222497263906, guid: 2035bcbcdf1975148808ccbe399944e7, type: 3}
+      propertyPath: animCount
+      value: 
+      objectReference: {fileID: 1445927885}
     - target: {fileID: 6780247322797443173, guid: 2035bcbcdf1975148808ccbe399944e7, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -406,6 +414,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3298425952665340548, guid: 2f11a94d722b6a143b4457df7c17044c, type: 3}
+      propertyPath: animCount
+      value: 
+      objectReference: {fileID: 1445927885}
+    - target: {fileID: 5986865314980775859, guid: 2f11a94d722b6a143b4457df7c17044c, type: 3}
+      propertyPath: animCount
+      value: 
+      objectReference: {fileID: 1445927885}
     - target: {fileID: 6372566829106821841, guid: 2f11a94d722b6a143b4457df7c17044c, type: 3}
       propertyPath: m_Name
       value: sugar
@@ -547,6 +563,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3298425952665340548, guid: 2f11a94d722b6a143b4457df7c17044c, type: 3}
+      propertyPath: animCount
+      value: 
+      objectReference: {fileID: 1445927885}
+    - target: {fileID: 5986865314980775859, guid: 2f11a94d722b6a143b4457df7c17044c, type: 3}
+      propertyPath: animCount
+      value: 
+      objectReference: {fileID: 1445927885}
     - target: {fileID: 6372566829106821841, guid: 2f11a94d722b6a143b4457df7c17044c, type: 3}
       propertyPath: m_Name
       value: mocha
@@ -745,6 +769,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: tea
       objectReference: {fileID: 0}
+    - target: {fileID: 5433389754321362707, guid: 59059932088fc7d4ba8fcbc6a376e3df, type: 3}
+      propertyPath: animCount
+      value: 
+      objectReference: {fileID: 1445927885}
     - target: {fileID: 6831884206034608286, guid: 59059932088fc7d4ba8fcbc6a376e3df, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -833,6 +861,10 @@ PrefabInstance:
       propertyPath: m_RaycastTarget
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8203846634411219255, guid: 59059932088fc7d4ba8fcbc6a376e3df, type: 3}
+      propertyPath: animCount
+      value: 
+      objectReference: {fileID: 1445927885}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -898,7 +930,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Dang. I'm so exhausted a can't see straight. What was what again?
+  m_text: Dang. I'm so exhausted I can't see straight. What was what again?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1173,6 +1205,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3298425952665340548, guid: 2f11a94d722b6a143b4457df7c17044c, type: 3}
+      propertyPath: animCount
+      value: 
+      objectReference: {fileID: 1445927885}
+    - target: {fileID: 5986865314980775859, guid: 2f11a94d722b6a143b4457df7c17044c, type: 3}
+      propertyPath: animCount
+      value: 
+      objectReference: {fileID: 1445927885}
     m_RemovedComponents:
     - {fileID: 1571212104032724079, guid: 2f11a94d722b6a143b4457df7c17044c, type: 3}
     m_RemovedGameObjects: []
@@ -1290,6 +1330,7 @@ RectTransform:
   - {fileID: 1690630759}
   - {fileID: 13431060}
   - {fileID: 1218614977}
+  - {fileID: 3021168788524618566}
   m_Father: {fileID: 934568219}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -1882,6 +1923,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 641414698}
     m_Modifications:
+    - target: {fileID: 585819136908392092, guid: 2035bcbcdf1975148808ccbe399944e7, type: 3}
+      propertyPath: animCount
+      value: 
+      objectReference: {fileID: 1445927885}
     - target: {fileID: 947928687009790079, guid: 2035bcbcdf1975148808ccbe399944e7, type: 3}
       propertyPath: m_Type
       value: 0
@@ -1982,6 +2027,10 @@ PrefabInstance:
       propertyPath: m_PreserveAspect
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6523454222497263906, guid: 2035bcbcdf1975148808ccbe399944e7, type: 3}
+      propertyPath: animCount
+      value: 
+      objectReference: {fileID: 1445927885}
     - target: {fileID: 6780247322797443173, guid: 2035bcbcdf1975148808ccbe399944e7, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2080,10 +2129,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 6780247322797443173, guid: 2035bcbcdf1975148808ccbe399944e7, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 3021168788524618566}
+    m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2035bcbcdf1975148808ccbe399944e7, type: 3}
 --- !u!224 &1218614977 stripped
@@ -2176,6 +2222,8 @@ PlayableDirector:
     value: {fileID: 1808309569}
   - key: {fileID: -716495818612216618, guid: 4dcdb0ca3afdb99499c03d01ffc6dab1, type: 2}
     value: {fileID: 367934710}
+  - key: {fileID: 2087248830620872595, guid: 4dcdb0ca3afdb99499c03d01ffc6dab1, type: 2}
+    value: {fileID: 1197935764}
   m_ExposedReferences:
     m_References: []
 --- !u!114 &1445927884
@@ -2202,6 +2250,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 913246b1f8d8bbf4db95d9b2de32e755, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  playOnce: 0
+  director: {fileID: 1445927883}
   timeline: {fileID: 1445927881}
 --- !u!1 &1461343223
 GameObject:
@@ -2378,6 +2428,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3298425952665340548, guid: 2f11a94d722b6a143b4457df7c17044c, type: 3}
+      propertyPath: animCount
+      value: 
+      objectReference: {fileID: 1445927885}
+    - target: {fileID: 5986865314980775859, guid: 2f11a94d722b6a143b4457df7c17044c, type: 3}
+      propertyPath: animCount
+      value: 
+      objectReference: {fileID: 1445927885}
     - target: {fileID: 6372566829106821841, guid: 2f11a94d722b6a143b4457df7c17044c, type: 3}
       propertyPath: m_Name
       value: sprinkles
@@ -2825,6 +2883,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: coffee
       objectReference: {fileID: 0}
+    - target: {fileID: 5433389754321362707, guid: 59059932088fc7d4ba8fcbc6a376e3df, type: 3}
+      propertyPath: animCount
+      value: 
+      objectReference: {fileID: 1445927885}
     - target: {fileID: 6831884206034608286, guid: 59059932088fc7d4ba8fcbc6a376e3df, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2909,6 +2971,10 @@ PrefabInstance:
       propertyPath: m_RaycastTarget
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8203846634411219255, guid: 59059932088fc7d4ba8fcbc6a376e3df, type: 3}
+      propertyPath: animCount
+      value: 
+      objectReference: {fileID: 1445927885}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2934,8 +3000,12 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1218614977}
+    m_TransformParent: {fileID: 641414698}
     m_Modifications:
+    - target: {fileID: 585819136908392092, guid: 2035bcbcdf1975148808ccbe399944e7, type: 3}
+      propertyPath: animCount
+      value: 
+      objectReference: {fileID: 1445927885}
     - target: {fileID: 2069916476007934743, guid: 2035bcbcdf1975148808ccbe399944e7, type: 3}
       propertyPath: m_SizeDelta.x
       value: 409.6
@@ -2984,6 +3054,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -55
       objectReference: {fileID: 0}
+    - target: {fileID: 6523454222497263906, guid: 2035bcbcdf1975148808ccbe399944e7, type: 3}
+      propertyPath: animCount
+      value: 
+      objectReference: {fileID: 1445927885}
     - target: {fileID: 6780247322797443173, guid: 2035bcbcdf1975148808ccbe399944e7, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3046,11 +3120,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6780247322797443173, guid: 2035bcbcdf1975148808ccbe399944e7, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -188
+      value: -305
       objectReference: {fileID: 0}
     - target: {fileID: 6780247322797443173, guid: 2035bcbcdf1975148808ccbe399944e7, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -7.6719666
+      value: 98.32803
       objectReference: {fileID: 0}
     - target: {fileID: 6780247322797443173, guid: 2035bcbcdf1975148808ccbe399944e7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
