@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Linq;
 
-public class RecipeManager : MonoBehaviour
+public class RecipeManager1 : MonoBehaviour
 {
     private string[] toppings = {"sugar","cinnamon","milk","mocha","sprinkles"};
     private string[] liquids = { "tea","coffee","milk"};
@@ -20,14 +20,12 @@ public class RecipeManager : MonoBehaviour
     public static Text toppingUI;
     private int lineSwitch = 0;
     private bool play = false;
-    public  float recipeTimer = 3.0f;
+    public static float recipeTimer = 3.0f;
     private float recipeStart;
     private Animator anim;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        recipeTimer = 3f;
-        lineSwitch = 0;
         if (recipeTimer == 3.0f)
         {
             ingredientList = new string[3];
@@ -79,7 +77,7 @@ public class RecipeManager : MonoBehaviour
                     anim.Play("SendToIngredients");
                     break;
                 case 4:
-                    //DontDestroyOnLoad(this.gameObject);
+                  
                     SceneManager.LoadScene("IngredientsStation");
                     lineSwitch = 5;
                     break;
@@ -114,7 +112,7 @@ public class RecipeManager : MonoBehaviour
         {
             if (NextCustomer.destroyGO > 3)
             {
-                //Destroy(this.gameObject);  
+                this.gameObject.SetActive(false);
             }
             customerGO.SetActive(true);
         }
