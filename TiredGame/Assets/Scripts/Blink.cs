@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class Blink : MonoBehaviour
 {
     private Graphic imageMat;
@@ -12,6 +13,7 @@ public class Blink : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        NextCustomer.destroyGO = 0;
         anim = camGO.GetComponent<Animator>();
         imageMat = GetComponent<Image>();
         imageMat.color = new Color(0, 0, 0, alpha);
@@ -21,21 +23,24 @@ public class Blink : MonoBehaviour
     void Update()
     {
         alpha -= 1f*Time.deltaTime;
+        
         if (alpha < 0)
         {
-            if (CutsceneManager.skipCutscene == false)
             {
-                canvasGO.SetActive(true);
-                anim.Play("CamToRadio");
-                CutsceneManager.skipCutscene = true;
+                if (CutsceneManager.skipCutscene == false)
+                {
+                    canvasGO.SetActive(true);
+                    anim.Play("CamToRadio");
+                    CutsceneManager.skipCutscene = true;
                     Destroy(this.gameObject);
-                
-            }
-            else
-            {
-                recipeGO.SetActive(true);
-                customerGO.SetActive(true);
-                Destroy(this.gameObject);
+
+                }
+                else
+                {
+                    recipeGO.SetActive(true);
+                    customerGO.SetActive(true);
+                    Destroy(this.gameObject);
+                }
             }
             
         }

@@ -110,6 +110,10 @@ public class RecipeManager : MonoBehaviour
         }
         if (SceneManager.GetActiveScene().name == "OrderUp")
         {
+            if (NextCustomer.destroyGO > 3)
+            {
+                Destroy(this.gameObject);
+            }
             customerGO.SetActive(true);
         }
         else if (SceneManager.GetActiveScene().name == "Chris' testing scene")

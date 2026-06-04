@@ -8,7 +8,8 @@ using UnityEngine.SceneManagement;
 public class CurrentOrder : MonoBehaviour
 {
     private string[] ingredientsArray = { null, null, null };
-    
+    public int finished = 0;
+    public int ingredientInt = 0;
     // how we get access to the CupManager script
     public GameObject cupManager;
     
@@ -24,21 +25,34 @@ public class CurrentOrder : MonoBehaviour
     {
 
 
-        if (SceneManager.GetActiveScene().name == "OrderUp")
+        if (SceneManager.GetActiveScene().name == "OrderUp" && finished == 0)
         {
             foreach (string o in RecipeManager.ingredientList)
             {
                 
                 if(ingredientsArray.Contains(o))
                 {
-                    Debug.Log(o);
+                    ingredientInt += 1;
+                    Debug.Log(o +" was found.");
+                    
                 }
                 else
                 {
+
                     Debug.Log("We ain't got that: " + o);
                 }
 
             }
+            if(ingredientInt == 3)
+            {
+                Debug.Log("You did it!");
+
+            }
+            else
+            {
+                Debug.Log("You're fired!");
+            }
+            finished = 1;
         }
       
         

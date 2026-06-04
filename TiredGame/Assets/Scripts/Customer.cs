@@ -17,8 +17,13 @@ public class Customer : MonoBehaviour
     {
         if(SceneManager.GetActiveScene().name == "OrderUp")
         {
+            if (NextCustomer.destroyGO > 3)
+            {
+                Destroy(this.gameObject);
+            }
             anim.Play("CustomerStandStill");
         }
+       
       
     }
 }
