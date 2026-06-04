@@ -4,7 +4,7 @@ using UnityEngine.Playables;
 public class AnimationController : MonoBehaviour
 {
     //a variable to make sure the animation only plays once at the beginning
-    private float playOnce = 0;
+    public float playOnce = 0;
     private PlayableDirector director;
     // the object with the timeline in it
     public GameObject timeline;

@@ -5,16 +5,23 @@ using UnityEngine.UI;
 public class SilohuetteController : MonoBehaviour
 {
     public Image silohuetteImage;
+    private AnimationController animCount;
 
     void Start()
-    {
+    {   
         silohuetteImage.enabled = false;
-        StartCoroutine(SwitchImages());
+        if (animCount.GetComponent<AnimationController>().playOnce < 1)
+        {
+            SwitchImages(5f);
+        }
+        else {
+            SwitchImages(3f);
+        }
     }
 
-    IEnumerator SwitchImages()
+    IEnumerator SwitchImages(float timer)
     {
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(timer);
         silohuetteImage.enabled = true;
         
     }
